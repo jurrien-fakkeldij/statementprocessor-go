@@ -1,0 +1,73 @@
+<?xml version="1.0" ?>
+<records>
+  <record reference="117072">
+    <accountNumber>NL32RABO0195610843</accountNumber>
+    <description>Candy from Rik Dekker</description>
+    <startBalance>93.83</startBalance>
+    <mutation>+16.45</mutation>
+    <endBalance>110.28</endBalance>
+  </record>
+  <record reference="184507">
+    <accountNumber>NL46ABNA0625805417</accountNumber>
+    <description>Flowers for Peter Bakker</description>
+    <startBalance>5429</startBalance>
+    <mutation>-939</mutation>
+    <endBalance>6368</endBalance>
+  </record>
+  <record reference="133552">
+    <accountNumber>NL74ABNA0248990274</accountNumber>
+    <description>Clothes for Richard Bakker</description>
+    <startBalance>103.99</startBalance>
+    <mutation>+0.9</mutation>
+    <endBalance>104.89</endBalance>
+  </record>
+  <record reference="167904">
+    <accountNumber>NL43AEGO0773393871</accountNumber>
+    <description>Flowers from Peter Theuß</description>
+    <startBalance>74.91</startBalance>
+    <mutation>-27.04</mutation>
+    <endBalance>47.87</endBalance>
+  </record>
+  <record reference="153481">
+    <accountNumber>NL27SNSB0917829871</accountNumber>
+    <description>Candy for Jan Bakker</description>
+    <startBalance>84.5</startBalance>
+    <mutation>+47.88</mutation>
+    <endBalance>132.38</endBalance>
+  </record>
+  <record reference="155564">
+    <accountNumber>NL74ABNA0248990274</accountNumber>
+    <description>Candy from Vincent Bakker</description>
+    <startBalance>77.57</startBalance>
+    <mutation>-8.04</mutation>
+    <endBalance>69.53</endBalance>
+  </record>
+  <record reference="164220">
+    <accountNumber>NL27SNSB0917829871</accountNumber>
+    <description>Clothes for Erik Theuß</description>
+    <startBalance>10.1</startBalance>
+    <mutation>-0.3</mutation>
+    <endBalance>9.8</endBalance>
+  </record>
+  <record reference="182883">
+    <accountNumber>NL93ABNA0585619023</accountNumber>
+    <description>Tickets from Richard Theuß</description>
+    <startBalance>61.45</startBalance>
+    <mutation>-2.02</mutation>
+    <endBalance>59.43</endBalance>
+  </record>
+  <record reference="166351">
+    <accountNumber>NL93ABNA0585619023</accountNumber>
+    <description>Clothes for Richard Theuß</description>
+    <startBalance>3980</startBalance>
+    <mutation>+1000</mutation>
+    <endBalance>4981</endBalance>
+  </record>
+  <record reference="144833">
+    <accountNumber>NL32RABO0195610843</accountNumber>
+    <description>Flowers for Jan Theuß</description>
+    <startBalance>17.49</startBalance>
+    <mutation>+23.29</mutation>
+    <endBalance>40.78</endBalance>
+  </record>
+</records>
