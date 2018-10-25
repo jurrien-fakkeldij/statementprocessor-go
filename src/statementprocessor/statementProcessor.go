@@ -26,6 +26,23 @@ const (
 	DUPLICATEREFERENCE StatementState = 2
 )
 
+func (state StatementState) String() string {
+	// declare an array of strings
+	names := [...]string{
+		"Correct statement",
+		"Bad endbalance in statement",
+		"Duplicate reference found"}
+
+	//If it does not exist, return Unknown.
+	if state < CORRECT || state > DUPLICATEREFERENCE {
+		return "Unknown"
+	}
+	// return the name of a Weekday
+	// constant from the names array
+	// above.
+	return names[state]
+}
+
 // XMLStatements structure to read from the xml file.
 type XMLStatements struct {
 	XMLName    xml.Name       `xml:"records"`
@@ -111,11 +128,15 @@ func main() {
 	//wait with closing until at the end of the function.
 	defer writer.Flush()
 
+	//Write header
+	err = writer.Write([]string{"Reference", "Description", "State"})
+	checkError("Cannot write to file", err, true)
+
 	//Go through all the statements and write them to the file if the state is not CORRECT.
 	for i := 0; i < len(statements); i++ {
 		if statements[i].State != CORRECT {
 			fmt.Println(statements[i])
-			err := writer.Write([]string{strconv.Itoa(statements[i].Reference), statements[i].Description})
+			err := writer.Write([]string{strconv.Itoa(statements[i].Reference), statements[i].Description, statements[i].State.String()})
 			checkError("Cannot write to file", err, true)
 		}
 	}
