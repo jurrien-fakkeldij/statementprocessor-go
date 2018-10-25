@@ -27,7 +27,7 @@ const (
 )
 
 func (state StatementState) String() string {
-	// declare an array of strings
+	// declare an array of strings, compiler will count the number of elements.
 	names := [...]string{
 		"Correct statement",
 		"Bad endbalance in statement",
@@ -37,9 +37,7 @@ func (state StatementState) String() string {
 	if state < CORRECT || state > DUPLICATEREFERENCE {
 		return "Unknown"
 	}
-	// return the name of a Weekday
-	// constant from the names array
-	// above.
+	// return the name of the state based on the array above.
 	return names[state]
 }
 
